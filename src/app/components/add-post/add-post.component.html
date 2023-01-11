@@ -1,0 +1,43 @@
+<div >
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            required
+            [(ngModel)]="post.title"
+            name="title"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input
+            class="form-control"
+            id="description"
+            required
+            [(ngModel)]="post.description"
+            name="description"
+          />
+        </div>
+
+
+        <div class="form-group">
+          <label class="btn btn-default p-0">
+            <input type="file" (change)="selectFile($event)" accept="image/png,image/jpeg"/>
+          </label>
+        </div>
+  
+        <button (click)="savePost()" class="btn btn-success">Submit</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4>Post was submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newPost()">Add</button>
+      </div>
+    </div>
+  </div>
+  

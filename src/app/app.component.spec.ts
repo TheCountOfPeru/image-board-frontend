@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-15-crud'`, () => {
+  it(`should have as title 'image-board-frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-15-crud');
+    expect(app.title).toEqual('image-board-frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-15-crud app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('image-board-frontend app is running!');
   });
 });
