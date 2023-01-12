@@ -1,6 +1,6 @@
 # Image Board Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+This is a frontend made in Angular and Bootstrap. This designed to work with a [backend](https://github.com/TheCountOfPeru/image-board-backend). This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
 
